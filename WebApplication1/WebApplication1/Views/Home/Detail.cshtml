@@ -1,0 +1,75 @@
+﻿@model WebApplication1.Models.Album
+@{ 
+    ViewBag.Title = "Detail";
+    Layout = "/Views/Shared/Layout.cshtml";
+}
+
+
+
+<div>
+    <div>
+        <h4>詳細資料</h4>
+        <hr />
+        <dl class="dl-horizontal">
+           
+                
+           
+            
+            <dt>
+                @Html.DisplayNameFor(model => model.ID)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Class)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Class)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Constellation)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Constellation)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.birthday)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.birthday)
+            </dd>
+
+
+            @*<dt>
+                <label>Genre</label>
+
+            </dt>
+
+            <dd>
+                <span>@Model.Genre</span>
+             </dd>*@
+
+</dl>
+    </div>
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |*@
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</div>

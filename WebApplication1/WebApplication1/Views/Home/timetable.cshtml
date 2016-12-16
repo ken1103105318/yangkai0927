@@ -1,0 +1,135 @@
+﻿
+@model WebApplication1.Models.Album
+@{
+    ViewBag.Title = "Timetablke";
+    Layout = "/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+@*<@*html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    
+    </div>
+</body>
+</html>*@
+<div>
+    <div>
+        <h4>課表</h4>
+        <hr />
+        <div class="bs-example" data-example-id="contextual-table">
+         <table class="table">
+             <thead>
+              <tr>
+                  <th>
+                  <font>
+                      <font>＃</font>
+                      </font>
+                  </th>
+                  <th>
+                  <font>
+                      <font>一</font>
+                      </font>
+                  </th>
+                  <th>
+                  <font>
+                      <font>二</font>
+                      </font>
+                  </th>
+                  <th>
+                  <font>
+                      <font>三</font>
+                      </font>
+                  </th>
+                  <th>
+                      <font>
+                          <font>四</font>
+                      </font>
+                  </th>
+                  <th>
+                      <font>
+                          <font>五</font>
+                      </font>
+                  </th>
+                  </tr>
+              </thead>
+             <tbody>
+                @for (var i = 0; i < 10; i++) { 
+
+              <tr class="success">
+                  <th scope="row">
+                  <font>
+                      <font>1</font>
+                      </font>
+                  </th>
+                  <dd> @Html.DisplayFor(model => model.one) </dd>
+                  @*<td>
+                  <font>
+                      <font>欄目內容</font>
+                      </font>
+                  </td>
+                  <td>
+                      <font>
+                          <font>欄目內容</font>
+                      </font>
+                  </td>
+                  <td>
+                      <font>
+                          <font>欄目內容</font>
+                      </font>
+                  </td>*@
+                  @*<td>
+                  <font>
+                      <font>欄目內容</font>
+                      </font>
+                  </td>*@
+                  </tr>
+              <tr>
+                  <th scope="row">
+                  <font>
+                      <font>2</font>
+                      </font>
+                  </th>
+                  <td>
+                      <font>
+                          <font>欄目內容</font>
+                      </font>
+                  </td>
+                  @*<td>
+                      <font>
+                          <font>欄目內容</font>
+                      </font>
+                  </td>
+                  <td>
+                  <font>
+                      <font>欄目內容</font>
+                      </font>
+                  </td>
+                  <td>
+                  <font>
+                      <font>欄目內容</font>
+                      </font>
+                  </td>
+                  <td>
+                  <font>
+                      <font>欄目內容</font>
+                      </font>
+                  </td>*@
+                  </tr>
+                 }
+             </tbody> 
+            </table> 
+        </div>
+    
+    </div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+</div>
